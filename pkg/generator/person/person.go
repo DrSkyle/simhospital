@@ -208,7 +208,7 @@ func (g Generator) phoneNumberUK() string {
 }
 
 func (g Generator) phoneNumberUS() string {
-	return fmt.Sprintf("1 %03d %04d", rand.Intn(1000), rand.Intn(10000))
+	return fmt.Sprintf("1 %03d %03d %04d", rand.Intn(1000), rand.Intn(1000), rand.Intn(10000))
 }
 
 // Return a newly minted NHS number that will pass validation rules. See:

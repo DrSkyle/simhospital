@@ -573,7 +573,7 @@ func validatePhoneNumberUK(num string) error {
 }
 
 func validatePhoneNumberUS(num string) error {
-	regex := "^1 [0-9]{3} [0-9]{4}$"
+	regex := "^1 [0-9]{3} [0-9]{3} [0-9]{4}$"
 	return validatePhoneNumber(num, regex)
 }
 
